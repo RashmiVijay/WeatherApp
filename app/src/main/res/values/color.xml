@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="darkGrey">#3D3D3D</color>
+    <color name="lightGrey">#CCCCCC</color>
+    <color name="red">#FF0000</color>
+    <color name="anotherGrey">#999999</color>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <!--ListRow Left Icon Image-->
+    <LinearLayout
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:background="@color/lightGrey">
+
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <!--Weather Summary-->
+    <TextView
+        android:id="@+id/weather_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:text="Current Weather Summary"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/weather_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75"
+        android:layout_below="@+id/weather_summary"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_alignBaseline="@id/icon"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:id="@+id/weather_temp_high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="80"
+        android:layout_below="@+id/weather_summary"
+        android:layout_toRightOf="@+id/weather_temp"
+        android:textSize="15dp"
+        android:paddingLeft="3dp"/>
+
+    <TextView
+        android:id="@+id/weather_temp_low"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="70"
+        android:layout_below="@+id/weather_temp_high"
+        android:layout_toRightOf="@+id/weather_temp"
+        android:layout_alignBottom="@+id/weather_temp"
+        android:textSize="15dp"
+        android:paddingLeft="3dp"/>
+
+
+</RelativeLayout>
